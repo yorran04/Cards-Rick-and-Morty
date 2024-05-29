@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oxanium:wght@200..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.logo{
+    width: 50%;
+    max-width: 270px;
+    height: 120px;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: url('/assets/img/bg.jpg');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content{
+
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    
+}
+
+.card{
+    min-width: 300px;
+    height:auto;
+    background: #aaaa;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    position: absolute;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.cardRotacao{
+    transform:rotateY(90deg);
+    background: black;
+    transition: 2s;
+}
+
+.form{
+     background-color: #eeee;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+.input{
+    width: 100%;
+    padding: 5px 0 5px 10px;
+    
+}
+
+.card_img{
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+
+}
+
+.card_img img{
+    width: 100% ;
+    height: 100%;
+    object-fit:cover;
+}
+
+.name{
+    text-align: center;
+}
+.descript{
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 5px;
+    
+}
+
+@media (max-width:600px) {
+    .descript{
+        flex-direction: column;
+    }
+    .content{
+        max-width: 100%;
+    }
+   
+}
+.descript_item{
+    text-align: center;
+    border-radius: 10px;
+    width: 100%;
+    height: 80px;
+    background-color: #eeee;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+}
+
+.name{
+    background-color: #eeee;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.2rem;
+}
+
+.name h1{
+    text-transform: capitalize;
+}
+p{
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.botoes{
+    width: 90%;
+    position: absolute;
+    top:25%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2px 0 2px;
+    
+}
+
+.botoes .btn{
+    padding: 0.5rem;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #eeee;
+    cursor: pointer;
+}
